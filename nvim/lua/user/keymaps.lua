@@ -41,11 +41,17 @@ vim.keymap.set('i', ';;', '<Esc>A;<Esc>')
 vim.keymap.set('i', ',,', '<Esc>A,<Esc>')
 
 --
+-- Quickly clear search highlighting
+--
+
+vim.keymap.set('n', '<Leader>k', ':nohlsearch<CR>')
+
+--
 -- Open the current file in the default program (on Mac this should just be just `open`)
 --
 
 --vim.keymap.set('n', '<leader>x', ':!xdg-open %<cr><cr>')
-vim.keymap.set('n', '<leader>x', ':!powershell.exe /C start %<cr><cr>')
+--vim.keymap.set('n', '<leader>x', ':!powershell.exe /C start %<cr><cr>')
 
 --
 -- Resize with arrows
@@ -62,6 +68,8 @@ vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>')
 
 vim.keymap.set('i', '<A-j>', '<Esc>:move .+1<CR>==gi')
 vim.keymap.set('i', '<A-k>', '<Esc>:move .-2<CR>==gi')
-vim.keymap.set('x', '<A-j>', ":move '>+1<CR>gv-gv")
-vim.keymap.set('x', '<A-k>', ":move '<-2<CR>gv-gv")
+vim.keymap.set('n', '<A-j>', ":move .+1<CR>==")
+vim.keymap.set('n', '<A-k>', ":move .-2<CR>==")
+vim.keymap.set('v', '<A-j>', ":move '>+1<CR>gv=gv")
+vim.keymap.set('v', '<A-k>', ":move '<-2<CR>gv=gv")
 

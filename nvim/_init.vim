@@ -2,8 +2,8 @@
 "----- Inits 
 "-----
 
-syntax enable
-colorscheme desert
+"syntax enable
+"colorscheme desert
 
 let mapleader = ',' 						" The default leader is backslash, but a comma is much better
 set number 							" Let's activate line numbers
