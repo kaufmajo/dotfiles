@@ -47,6 +47,12 @@ vim.keymap.set('i', ',,', '<Esc>A,<Esc>')
 vim.keymap.set('n', '<Leader>k', ':nohlsearch<CR>')
 
 --
+-- Quickly set text options
+--
+
+vim.keymap.set('n', '<Leader>t', ':set wrap linebreak<CR>')
+
+--
 -- Open the current file in the default program (on Mac this should just be just `open`)
 --
 
