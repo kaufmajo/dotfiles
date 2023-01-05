@@ -97,13 +97,8 @@ use({
     end,
   })
 
--- Automatically fix identation when pastin code
-use({
-    'sickill/vim-pasta',
-    config = function()
-      vim.g.pasta_disabled_filetypes = {'fugitive'}
-    end,
-  })
+-- Automatically fix identation when pasting code
+use('sickill/vim-pasta')
 
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
