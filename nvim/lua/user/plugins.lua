@@ -26,6 +26,14 @@ local use = require('packer').use
 -- Packer can manage itself
 use('wbthomason/packer.nvim')
 
+-- One Dark theme
+use({
+    'joshdick/onedark.vim',
+    config = function()
+      vim.cmd('colorscheme onedark')
+    end,
+  })
+
 -- Commenting support
 use('tpope/vim-commentary')
 
