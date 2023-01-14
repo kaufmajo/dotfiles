@@ -31,6 +31,7 @@ use({
     'navarasu/onedark.nvim',
     config = function()
       vim.cmd('colorscheme onedark')
+      vim.cmd('highlight SpellBad guifg=NONE')
 
         -- -- Hide the characters in FloatBorder
         -- vim.api.nvim_set_hl(0, 'FloatBorder', {
