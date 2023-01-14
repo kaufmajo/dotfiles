@@ -90,3 +90,10 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>')
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>')
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>')
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>')
+
+--
+-- Switch Spell Language
+--
+
+vim.keymap.set('n', '<Leader>le', ':setlocal spelllang=en spellfile=~/.config/nvim/spell/en.utf-8.add<CR>')
+vim.keymap.set('n', '<Leader>lg', ':setlocal spelllang=de spellfile=~/.config/nvim/spell/de.utf-8.add<CR>')
