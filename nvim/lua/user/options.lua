@@ -43,13 +43,13 @@ vim.opt.redrawtime = 10000 -- Allow more time for loading syntax on large files
 
 vim.api.nvim_create_autocmd({ "InsertEnter" }, {
 	callback = function()
-		--vim.api.nvim_set_hl(0, "Normal", {bg="#110000"})
+	--vim.api.nvim_set_hl(0, "Normal", {bg="#110000"})
         vim.opt.cursorline = true
 	end
 })
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {
 	callback = function()
-		--vim.api.nvim_set_hl(0, "Normal", {bg="#001100"})
+	--vim.api.nvim_set_hl(0, "Normal", {bg="#001100"})
         vim.opt.cursorline = false
 	end
 })
