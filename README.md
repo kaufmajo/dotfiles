@@ -1,8 +1,12 @@
 # Dotfiles
 
-This setup is inspired by Jess Archer from a laracast.com series. Thank you!
+This setup is inspired by <a href="https://github.com/jessarcher/dotfiles">Jess Archer</a> from a <a href="https://laracasts.com">Laracasts.com</a> series. Thank you!
 
-## WSL2 Terminal installs
+## Environment
+
+For my installation I am using Windows terminal, running a Debian distribution with WSL2.
+
+## WSL2 Terminal installs (used by Neovim plugins)
 
 ```
 sudo apt install make
@@ -13,4 +17,9 @@ sudo apt-get install fd-find
 
 ## Windows Terminal 
 
-Install a Nerd font: https://www.nerdfonts.com/font-downloads
+Install a Nerd font on the OS: 
+
+https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup
+https://www.nerdfonts.com/font-downloads
+
+Configure this new font within Windows Terminal Settings.
