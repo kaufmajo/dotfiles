@@ -52,7 +52,7 @@ use({
         -- })
 
         -- vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#30323E' })
-        -- vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
+        vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
 
     end,
   })
@@ -170,6 +170,14 @@ use({
   after = 'onedark.nvim',
   config = function()
     require('user.plugins.bufferline')
+  end,
+})
+
+-- Display identation line
+use({
+  'lukas-reineke/indent-blankline.nvim',
+  config = function()
+    require('user.plugins.indent-blankline')
   end,
 })
 
