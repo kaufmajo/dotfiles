@@ -20,6 +20,7 @@ sudo apt-get install fd-find
 Install a Nerd font on the OS: 
 
 https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup
+
 https://www.nerdfonts.com/font-downloads
 
 Configure this new font within Windows Terminal Settings.
