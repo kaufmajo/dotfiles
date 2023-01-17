@@ -40,10 +40,10 @@ use({
         -- })
 
         -- -- Make the StatusLineNonText background the same as StatusLine
-        -- vim.api.nvim_set_hl(0, 'StatusLineNonText', {
-        --   fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
-        --   bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
-        -- })
+        vim.api.nvim_set_hl(0, 'StatusLineNonText', {
+          fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
+          bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
+        })
 
         -- -- Hide the characters in CursorLineBg
         -- vim.api.nvim_set_hl(0, 'CursorLineBg', {
@@ -153,6 +153,15 @@ use({
     require('user.plugins.telescope')
   end,
 })
+
+-- A Status line
+use({
+    'nvim-lualine/lualine.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function()
+      require('user.plugins.lualine')
+    end,
+  })
 
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
