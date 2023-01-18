@@ -181,6 +181,7 @@ use({
   end,
 })
 
+-- Add a dashboard
 use({
   'glepnir/dashboard-nvim',
   config = function()
