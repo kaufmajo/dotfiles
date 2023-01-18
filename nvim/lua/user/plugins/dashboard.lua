@@ -2,7 +2,7 @@ local db = require('dashboard')
 
 db.custom_header = {
     '',
-    '       JJJJJJJJJJJJJJJ             KKKKKK',
+    '       JJJJJJJJJJJJJJJ              KKKKKKK',
     '     JJJJJJJJJJJJJJJJJ           KKKKKK',
     '  JJJJJJJJJJJJJJJJJJJ         KKKKK',
     ' JJJJJ          JJJJJ       KKKKK',
@@ -21,7 +21,7 @@ db.custom_header = {
     ' JJJJJ          JJJJJ       KKKKK',
     '  JJJJJJJJJJJJJJJJJJJ         KKKKK',
     '     JJJJJJJJJJJJJJJJJ           KKKKKK',
-    '       JJJJJJJJJJJJJJJ             KKKKKK',
+    '       JJJJJJJJJJJJJJJ              KKKKKKK',
     '',
 }
 
