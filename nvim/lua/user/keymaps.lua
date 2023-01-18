@@ -97,3 +97,8 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>')
 
 vim.keymap.set('n', '<Leader>le', ':setlocal spelllang=en spellfile=~/.config/nvim/spell/en.utf-8.add<CR>')
 vim.keymap.set('n', '<Leader>lg', ':setlocal spelllang=de spellfile=~/.config/nvim/spell/de.utf-8.add<CR>')
+
+--
+-- Format whole file and remember position
+--
+-- vim.keymap.set('n', '<F7>', 'gg=G<C-o>')
