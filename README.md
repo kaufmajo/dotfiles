@@ -16,7 +16,6 @@ For the Neovim installation, I followed the instructions underneath the 'AppImag
 
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 
-
 Further packet requirements, in order to fully use/install several Neovim plugins
 
 ```
@@ -35,3 +34,28 @@ https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup
 https://www.nerdfonts.com/font-downloads
 
 Configure this new font within Windows Terminal Settings.
+
+### Using Windows Clipboard with Neovim
+
+https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
+
+```
+File: options.lua
+
+--
+-- clipboard
+--
+
+vim.g.clipboard = {
+    name = "win32yank-wsl",
+    copy = {
+         ["+"] = "win32yank.exe -i --crlf",
+         ["*"] = "win32yank.exe -i --crlf"
+    },
+    paste = {
+        ["+"] = "win32yank.exe -o --lf",
+        ["*"] = "win32yank.exe -o --lf"
+    },
+    cache_enabled = false
+}
+```
