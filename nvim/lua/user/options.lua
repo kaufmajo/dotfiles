@@ -38,6 +38,23 @@ vim.opt.updatetime = 4001 -- Set updatetime to 1ms longer than the default to pr
 vim.opt.redrawtime = 10000 -- Allow more time for loading syntax on large files
 
 --
+-- clipboard
+--
+
+vim.g.clipboard = {
+    name = "win32yank-wsl",
+    copy = {
+         ["+"] = "win32yank.exe -i --crlf",
+         ["*"] = "win32yank.exe -i --crlf"
+    },
+    paste = {
+        ["+"] = "win32yank.exe -o --lf",
+        ["*"] = "win32yank.exe -o --lf"
+    },
+    cache_enabled = false
+}
+
+--
 -- indicate when I am in insert mode
 --
 
