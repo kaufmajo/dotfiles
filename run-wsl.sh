@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $(/etc/init.d/apache2 status | grep -v grep | grep 'apache2 is running' | wc -l) > 0 ]
+if [[ $(/etc/init.d/apache2 status | grep 'apache2 is running' | wc -l) > 0 ]]
 then
 
     echo "Apache is currently running."
