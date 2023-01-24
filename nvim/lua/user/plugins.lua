@@ -57,6 +57,14 @@ use({
     end,
   })
 
+-- Automatically add closing brackets, quotes, etc.
+use({
+    'windwp/nvim-autopairs',
+    config = function()
+      require('nvim-autopairs').setup()
+    end,
+  })
+
 -- Commenting support
 use('tpope/vim-commentary')
 
@@ -99,14 +107,6 @@ use({
     end,
     config = function()
       vim.cmd('Rooter')
-    end,
-  })
-
--- Automatically add closing brackets, quotes, etc.
-use({
-    'windwp/nvim-autopairs',
-    config = function()
-      require('nvim-autopairs').setup()
     end,
   })
 
@@ -203,6 +203,11 @@ use({
     vim.keymap.set('n', 'gb', ':Gitsigns blame_line<CR>')
   end,
 })
+
+use({
+    'tpope/vim-fugitive',
+    requires = 'tpope/vim-rhubarb'
+  })
 
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
