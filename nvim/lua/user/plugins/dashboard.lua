@@ -1,38 +1,50 @@
-local db = require('dashboard')
+require('dashboard').setup({
+    theme = 'doom',
+    config = {
+        header = {},
+        center = {{
+            icon = '  ',
+            desc = 'New file',
+            key = '',
+            action = 'enew'
+        }, {
+            icon = '  ',
+            desc = 'Find file',
+            key = 'SPC f',
+            action = 'Telescope find_files'
+        }, {
+            icon = '  ',
+            desc = 'Recent files',
+            key = 'SPC h',
+            action = 'Telescope oldfiles'
+        }, {
+            icon = '  ',
+            desc = 'Find Word',
+            key = 'SPC g',
+            action = 'Telescope live_grep'
+        }},
+        footer = {}
+    }
+})
 
-db.custom_header = {
-  '',
-  '______/\\\\\\\\\\\\\\\\\\\\\\__/\\\\\\________/\\\\\\_',
-  '  _____\\/////\\\\\\///__\\/\\\\\\_____/\\\\\\//__',
-  '    _________\\/\\\\\\_____\\/\\\\\\__/\\\\\\//_____',
-  '      _________\\/\\\\\\_____\\/\\\\\\\\\\\\//\\\\\\_____',
-  '        _________\\/\\\\\\_____\\/\\\\\\//_\\//\\\\\\____',
-  '          _________\\/\\\\\\_____\\/\\\\\\____\\//\\\\\\___',
-  '            __/\\\\\\___\\/\\\\\\_____\\/\\\\\\_____\\//\\\\\\__',
-  '              _\\//\\\\\\\\\\\\\\\\\\______\\/\\\\\\______\\//\\\\\\_',
-  '                __\\/////////_______\\///________\\///__',
-  '',
-}
+-- vim.cmd([[
+--   augroup DashboardHighlights
+--      autocmd ColorScheme * highlight DashboardHeader guifg=#6272a4
+--      autocmd ColorScheme * highlight DashboardCenter guifg=#f8f8f2
+--      autocmd ColorScheme * highlight DashboardShortcut guifg=#bd93f9
+--      autocmd ColorScheme * highlight DashboardFooter guifg=#6272a4
+--    augroup end
+--  ]])
 
-db.custom_center = {
-  { icon = '  ', desc = 'New file                       ', action = 'enew' },
-  { icon = '  ', shortcut = 'SPC f', desc = 'Find file                 ', action = 'Telescope find_files' },
-  { icon = '  ', shortcut = 'SPC h', desc = 'Recent files              ', action = 'Telescope oldfiles' },
-  { icon = '  ', shortcut = 'SPC g', desc = 'Find Word                 ', action = 'Telescope live_grep' },
-}
-
-db.custom_footer = { '' }
-
-vim.cmd([[
-  augroup DashboardHighlights
-    autocmd ColorScheme * highlight DashboardHeader guifg=#6272a4
-    autocmd ColorScheme * highlight DashboardCenter guifg=#f8f8f2
-    autocmd ColorScheme * highlight DashboardShortcut guifg=#bd93f9
-    autocmd ColorScheme * highlight DashboardFooter guifg=#6272a4
-  augroup end
-]])
-
-vim.api.nvim_set_hl(0, 'DashboardHeader', { fg = '#6272a4' })
-vim.api.nvim_set_hl(0, 'DashboardCenter', { fg = '#f8f8f2' })
-vim.api.nvim_set_hl(0, 'DashboardShortcut', { fg = '#bd93f9' })
-vim.api.nvim_set_hl(0, 'DashboardFooter', { fg = '#6272a4' })
+-- vim.api.nvim_set_hl(0, 'DashboardHeader', {
+--     fg = '#6272a4'
+-- })
+-- vim.api.nvim_set_hl(0, 'DashboardCenter', {
+--     fg = '#f8f8f2'
+-- })
+-- vim.api.nvim_set_hl(0, 'DashboardShortcut', {
+--     fg = '#bd93f9'
+-- })
+-- vim.api.nvim_set_hl(0, 'DashboardFooter', {
+--     fg = '#6272a4'
+-- })
