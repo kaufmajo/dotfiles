@@ -21,6 +21,7 @@ Further packet requirements, in order to fully use/install several Neovim plugin
 ```
 sudo apt install make
 sudo apt install gcc
+sudo apt-get install g++
 sudo apt install ripgrep
 sudo apt-get install fd-find
 ```
