@@ -1,11 +1,11 @@
 require('dashboard').setup({
     theme = 'doom',
     config = {
-        header = {},
+        --header = {},
         center = {{
             icon = '  ',
             desc = 'New file',
-            key = '',
+            key = 'i',
             action = 'enew'
         }, {
             icon = '  ',
