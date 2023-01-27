@@ -22,7 +22,14 @@ require('dashboard').setup({
             desc = 'Find Word',
             key = 'SPC g',
             action = 'Telescope live_grep'
-        }},
+        }, {
+            icon = '  ',
+            desc = 'Nvim Tree',
+            key = 'SPC n (g?)',
+            action = 'NvimTreeOpen'
+        }
+        
+    },
         footer = {}
     }
 })
