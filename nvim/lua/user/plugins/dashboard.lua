@@ -1,38 +1,37 @@
 require('dashboard').setup({
-    theme = 'doom',
-    config = {
-        --header = {},
-        center = {{
-            icon = '  ',
-            desc = 'New file',
-            key = 'i',
-            action = 'enew'
-        }, {
-            icon = '  ',
-            desc = 'Find file',
-            key = 'SPC f',
-            action = 'Telescope find_files'
-        }, {
-            icon = '  ',
-            desc = 'Recent files',
-            key = 'SPC h',
-            action = 'Telescope oldfiles'
-        }, {
-            icon = '  ',
-            desc = 'Find Word',
-            key = 'SPC g',
-            action = 'Telescope live_grep'
-        }, {
-            icon = '  ',
-            desc = 'Nvim Tree',
-            key = 'SPC n (g?)',
-            action = 'NvimTreeOpen'
+        theme = 'doom',
+        config = {
+            --header = {},
+            center = {{
+                    icon = '  ',
+                    desc = 'New file',
+                    key = 'i',
+                    action = 'enew'
+                }, {
+                    icon = '  ',
+                    desc = 'Find file',
+                    key = 'SPC f',
+                    action = 'Telescope find_files'
+                }, {
+                    icon = '  ',
+                    desc = 'Recent files',
+                    key = 'SPC h',
+                    action = 'Telescope oldfiles'
+                }, {
+                    icon = '  ',
+                    desc = 'Find Word',
+                    key = 'SPC g',
+                    action = 'Telescope live_grep'
+                }, {
+                    icon = '  ',
+                    desc = 'Nvim Tree',
+                    key = 'SPC n (g?)',
+                    action = 'NvimTreeOpen'
+                }
+            },
+            footer = {}
         }
-        
-    },
-        footer = {}
-    }
-})
+    })
 
 -- vim.cmd([[
 --   augroup DashboardHighlights
