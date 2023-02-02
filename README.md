@@ -24,7 +24,11 @@ sudo apt install gcc
 sudo apt-get install g++
 sudo apt install ripgrep
 sudo apt-get install fd-find
+sudo apt-get install npm
 ```
+
+To install the current node version, please refer to this page: https://nodejs.org/en/download/package-manager/
+
 ### Using Windows Clipboard with Neovim
 
 https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
