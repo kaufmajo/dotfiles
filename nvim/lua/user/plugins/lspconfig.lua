@@ -7,6 +7,9 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- PHP
 require('lspconfig').intelephense.setup({capabilities = capabilities})
 
+-- Tailwind CSS
+require('lspconfig').tailwindcss.setup({})
+
 -- null-ls
 require('null-ls').setup({
     source = {
@@ -22,6 +25,7 @@ require('null-ls').setup({
           end,
         }),
       require('null-ls').builtins.formatting.prettierd,
+      require('null-ls').builtins.formatting.blade_formatter,
     }
   })
 
