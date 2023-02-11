@@ -35,6 +35,13 @@ sudo apt-get install npm
 
 To install the current node version, please refer to this page: https://nodejs.org/en/download/package-manager/
 
+#### Composer
+
+Install composer **globally**, so it can be used for plugin installation like phpactor
+
+https://getcomposer.org/download/
+
+
 ### Using Windows Clipboard with Neovim
 
 https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
