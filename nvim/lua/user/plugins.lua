@@ -222,7 +222,6 @@ use({
 
 -- Improved syntax highlighting and other things
 use({
-<<<<<<< HEAD
   'nvim-treesitter/nvim-treesitter',
   run = function()
       local ts_update = require('nvim-treesitter.install').update({with_sync = true})
@@ -237,21 +236,6 @@ use({
     require('user.plugins.treesitter')
   end,
 })
-=======
-        'nvim-treesitter/nvim-treesitter',
-        run = function()
-            require('nvim-treesitter.install').update({with_sync = true})
-        end,
-        requires = {
-            'nvim-treesitter/playground',
-            'nvim-treesitter/nvim-treesitter-textobjects',
-            'JoosepAlviste/nvim-ts-context-commentstring',
-        },
-        config = function()
-            require('user.plugins.treesitter')
-        end,
-    })
->>>>>>> 221642b7d689a2d081751463ddf4a85e0b5fe1fc
 
 -- Language Server Protocol
 use({
