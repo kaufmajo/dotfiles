@@ -1,0 +1,18 @@
+<div class="mb-5">
+    <label
+        class="block mb-2 uppercase font-bold text-xs text-gray-700"
+        for="$NAME_A$">
+        $NAME_B$
+    </label>
+    <input
+        class="border border-gray-400 p-2 w-full"
+        type="text"
+        id="$NAME_A$"
+        name="$NAME_A$"
+        required>
+
+    @error('$NAME_A$')
+    <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
+    @enderror
+</div>
+$END$

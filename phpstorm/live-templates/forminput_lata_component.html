@@ -1,0 +1,15 @@
+<div class="mb-5">
+    <x-input-label
+        for="$NAME_A$"
+        :value="__('$NAME_B$')"/>
+    <x-input-text
+        id="$NAME_A$" class="block mt-1 w-full"
+        type="text"
+        name="$NAME_A$"
+        value="{{ old('$NAME_A$') }}"
+        required/>
+    <x-input-error
+        :messages="$errors->get('$NAME_A$')"
+        class="mt-2"/>
+</div>
+$END$
