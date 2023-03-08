@@ -1,5 +1,5 @@
 require('nvim-treesitter.configs').setup({
-    ensure_installed = 'all',
+    ensure_installed = { "c", "lua", "vim", "help", "query", "php", "bash", "comment", "css", "dockerfile", "gitattributes", "gitcommit", "gitignore", "graphql", "html", "http", "javascript", "json", "markdown", "passwd", "phpdoc", "regex", "scss", "sql", "twig", "typescript", "vue", "yaml"  },
     highlight = {
     enable = true,
     disable = { 'NvimTree' },
