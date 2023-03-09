@@ -35,6 +35,10 @@ sudo apt-get install npm
 
 To install the current node version, please refer to this page: https://nodejs.org/en/download/package-manager/
 
+```
+sudo npm install -g tree-sitter-cli
+```
+
 #### Composer
 
 Install composer **globally**, so it can be used for plugin installation like phpactor
