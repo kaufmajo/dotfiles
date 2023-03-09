@@ -221,9 +221,7 @@ use({
 })
 
 -- autocomplete tags
-use({
-    'windwp/nvim-ts-autotag',
-})
+use({'windwp/nvim-ts-autotag'})
 
 -- Improved syntax highlighting and other things
 use({
