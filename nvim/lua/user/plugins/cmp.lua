@@ -11,9 +11,9 @@ end
 
 
 cmp.setup({
-  experimental = {
-    ghost_text = true,
-  },
+  -- experimental = {
+  --   ghost_text = true,
+  -- },
   formatting = {
     format = lspkind.cmp_format(),
   },
@@ -43,7 +43,7 @@ cmp.setup({
         fallback()
       end
     end, { 'i', 's' }),
-  ['<CR>'] = cmp.mapping.confirm({select=true}),
+  ['<CR>'] = cmp.mapping.confirm({select=false}),
   },
   sources = {
     { name = 'nvim_lsp' },
