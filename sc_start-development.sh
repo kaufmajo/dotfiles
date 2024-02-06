@@ -15,3 +15,17 @@ else
     sudo service apache2 start
 fi
 
+if [[ $(/etc/init.d/mariadb status | grep 'mariadb is running' | wc -l) > 0 ]]
+then
+
+    echo "MariaDb is currently running."
+
+    sudo service mariadb stop
+    sudo service mariadb start
+
+else
+
+    echo "MariaDb is not running."
+
+    sudo service mariadb start
+fi
