@@ -34,3 +34,15 @@ https://www.git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
 ```
 git config --global core.autocrlf false
 ```
+
+## Visual Studio Code
+
+https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css
+
+https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
+
+https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+
+https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug
+
+https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client
